@@ -1,0 +1,20 @@
+{
+    "email": {
+        "host": "",
+        "port": "",
+        "secure": true,
+        "user": "",
+        "password": ""
+    },
+    "duproprio": {
+        "url": "https://duproprio.com/fr/rechercher/liste?search=true&cities%5B0%5D=9&min_price=50000&max_price=250000&is_for_sale=1&with_builders=1&parent=1&pageNumber=1&sort=-published_at"
+    },
+    "sutton": {
+        "url": "https://www.suttonquebec.com/fr/proprietes-a-vendre.html?page=1&orderBy=1&municipaliteCode=93042&regionCode=02&platine=0&categorieCode=R&texteRecherche=Alma&prixMin=50000&prixMax=250000&nbChambreMin=0&genreCodes=ME%2CMEM&genreCodes=MM&genreCodes=PP&genreCodes=MPM&genreCodes=CH&genreCodes=RX%2C2X%2C3X%2C4X%2C5X%2C6X%2C7X%2C8X%2C9X%2C10X%2C11X%2C12X%2C13X%2C14X%2C15X%2C16X%2C17X%2C25X%2C33X&triInscription=1"
+    },
+    "centris": {
+        "url": "https://www.centris.ca/fr/maison~a-vendre~alma?view=Thumbnail",
+        "minPrice": 50000,
+        "maxPrice": 250000
+    }
+}

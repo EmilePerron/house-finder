@@ -1,0 +1,16 @@
+doctype html
+head
+  title Open to see what might just be your new home!
+.container(style='padding-top: 45px; padding-bottom: 60px; font-family: Arial, Tahoma, Verdana, sans-serif; background-color: #f5f5f5')
+  h1(style='margin-top: 30px; text-align: center;') #{newListingCount} new property listings for you
+  .listing(style='width: 750px; max-width: 100%; margin: 30px auto;')
+    - for (var listing of listings)
+      div(style='display: block; width: 100%; min-height: 215px; padding: 30px; margin-bottom: 30px; background-color: white; box-sizing: border-box; position: relative;')
+        a(href=listing.url style='float: left; margin-left: -30px; margin-top: -30px;')
+          img(src=listing.imageUrl style='width: auto; height: 215px;margin-right: 30px;')
+        h2(style='margin-top: 0; margin-bottom: 10px; font-size: 24px; line-height: 24px; font-weight: 600;') #{listing.price.toLocaleString()}$
+        p(style='margin-top: 0; font-size: 1.51em;') #{listing.address}, #{listing.city}
+        p #{listing.description}
+        a(href=listing.url)
+          button(type'button' style='display: inline-block; padding; 8px 14px; font-size: 16px; line-height: 24px; font-weight: 600; text-decoration: none; color: white; background-color: #0068d8; border: none; border-radius: 3px;') View on #{listing.source}
+        div(style='clear:both;')
